@@ -176,11 +176,17 @@
     transition: all 0.3s ease-in-out; /* Smooth transition */
   }
   
-  /* Footer */
+  /* Footer Styling */
   footer {
-    margin-top: 20px;
+    position: absolute;
+    bottom: 20px; /* Keeps footer at the bottom */
     font-size: 1rem;
     text-align: center;
     color: #fff;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
   
