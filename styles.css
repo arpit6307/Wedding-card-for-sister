@@ -5,6 +5,7 @@
     box-sizing: border-box;
   }
   
+  /* Body Styles */
   body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ffafbd, #ffc3a0);
@@ -13,7 +14,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #333;  
+    color: #333;
+    padding: 20px;
   }
   
   /* Card Container */
@@ -79,25 +81,25 @@
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(255, 107, 129, 0.5);
   }
-
+  
   /* Front Side Button Hover */
-.front .flip-button:hover {
+  .front .flip-button:hover {
     background: linear-gradient(135deg, #ff7eb3, #ff9a9e); /* Brighter gradient */
     box-shadow: 0 8px 20px rgba(255, 107, 129, 0.8); /* Stronger shadow */
     transform: scale(1.1); /* Slight zoom effect */
     transition: all 0.3s ease-in-out; /* Smooth transition */
   }
   
-  /* Wedding Photo */
-  .wedding-photo {
-    width: 80%;
-    height: auto;
-    border-radius: 15px;
+    /* Wedding Photo in Circle */
+   .wedding-photo {
+    width: 150px; /* Set width */
+    height: 150px; /* Set height to match width */
+    border-radius: 50%; /* Makes it a circle */
     margin-bottom: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for a 3D effect */
     border: 5px solid rgba(255, 107, 129, 0.8); /* Stylish border */
-    object-fit: cover;
-  }
+    object-fit: cover; /* Ensures the photo fills the circle */
+}
   
   /* Back Side */
   .back {
@@ -143,7 +145,7 @@
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(255, 107, 129, 0.5);
   }
-
+  
   /* Back Side Button Hover */
   .back .flip-button:hover {
     background: #ff758c; /* Brighter pink */
@@ -151,6 +153,48 @@
     box-shadow: 0 8px 20px rgba(255, 107, 129, 0.8); /* Stronger shadow */
     transform: scale(1.1); /* Slight zoom effect */
     transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Contact Section */
+  .contact-numbers {
+    display: none; /* Hidden by default */
+  }
+  
+  .contact-btn {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(255, 107, 129, 0.5);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-btn:hover {
+    background: linear-gradient(135deg, #ff7eb3, #ff9a9e);
+    box-shadow: 0 8px 20px rgba(255, 107, 129, 0.8);
+    transform: scale(1.1);
+  }
+  
+  #contact-btn {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3); /* Contact button */
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 107, 129, 0.5);
+    margin-top: 10px;
+  }
+  
+  #contact-btn:hover {
+    background: linear-gradient(135deg, #ff7eb3, #ff9a9e);
+    box-shadow: 0 8px 20px rgba(255, 107, 129, 0.8);
+    transform: scale(1.1);
   }
 
   /* Location Button */
@@ -166,15 +210,17 @@
     display: inline-block;
     box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
     margin-left: 10px; /* Add spacing between buttons */
-  }
-  
-  /* Hover Effect for Location Button */
-  .location-button:hover {
+    transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+    /* Hover Effect for Location Button */
+    .location-button:hover {
     background: linear-gradient(135deg, #ff6347, #ff4500); /* Brighter gradient */
     box-shadow: 0 8px 20px rgba(255, 69, 0, 0.8); /* Stronger shadow */
     transform: scale(1.1); /* Slight zoom effect */
     transition: all 0.3s ease-in-out; /* Smooth transition */
-  }
+}
+
   
   /* Footer */
   footer {
